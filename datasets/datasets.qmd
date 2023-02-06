@@ -8,8 +8,23 @@ editor: visual
 
 ```{r}
 library(readr)
-hotelreservations <- read_csv("datasets/hotelreservations_raw.csv")
+hotelreservations <- read_csv("hotelreservations_raw.csv")
 x<- sample(1:nrow(hotelreservations), 10000)
 hotelreservations = hotelreservations[x, ]
-write_csv(hotelreservations, "datasets/hotelreservations.csv")
+write_csv(hotelreservations, "hotelreservations.csv")
+head(hotelreservations)
+```
+
+## Spotify
+
+```{r}
+spotify <- read_csv("spotify_raw.csv")
+head(spotify)
+```
+
+## Fraud
+
+```{r}
+fraud <- read_csv("fraud.csv")
+head(fraud)
 ```
