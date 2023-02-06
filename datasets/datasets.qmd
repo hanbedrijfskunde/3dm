@@ -1,0 +1,15 @@
+---
+title: "Data Sets"
+format: html
+editor: visual
+---
+
+## Hotel reservations
+
+```{r}
+library(readr)
+hotelreservations <- read_csv("datasets/hotelreservations_raw.csv")
+x<- sample(1:nrow(hotelreservations), 10000)
+hotelreservations = hotelreservations[x, ]
+write_csv(hotelreservations, "datasets/hotelreservations.csv")
+```
