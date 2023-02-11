@@ -28,3 +28,18 @@ head(spotify)
 fraud <- read_csv("fraud.csv")
 head(fraud)
 ```
+
+## HR
+
+```{r}
+hr <- read_csv("hr.csv")
+head(hr)
+```
+
+## HR Technology
+
+```{r}
+mbotech <- read_delim("mbotech.csv", delim = ";", 
+    escape_double = FALSE, trim_ws = TRUE)
+head(mbotech)
+```
